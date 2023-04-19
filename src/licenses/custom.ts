@@ -36,7 +36,7 @@ export class Custom {
         this.filePath = path.parse(filePath);
 
         if (customTermsAndConditionsFile) {
-            this.customHeader = fs.readFileSync(this.evaluateEnvVars(customTermsAndConditionsFile)).toString();
+            this.customTermsAndConditions = fs.readFileSync(this.evaluateEnvVars(customTermsAndConditionsFile)).toString();
         }
 
         if (customHeaderFile) {
